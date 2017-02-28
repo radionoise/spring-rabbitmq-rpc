@@ -1,0 +1,5 @@
+rootProject.name = 'spring-rabbitmq-rpc'
+include 'server'
+include 'client'
+include 'common'
+
