@@ -6,6 +6,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
+import java.util.UUID;
+
 /**
  * Created by Daniil Molchanov on 28.02.17.
  */
@@ -22,8 +24,8 @@ public class SimpleInterfaceImpl implements SimpleInterface {
 
     @Override
     public String doJob(int clientId) {
-        log.info("Client with ID: {} called doJob method on {} node", clientId, nodeId);
-
-        return "Simple payload generated on node " + nodeId + ". Client " + clientId + " called this method";
+        String uuid = UUID.randomUUID().toString();
+        log.info("UUID {} generated on node {} upon request from client {}", uuid, nodeId, clientId);
+        return uuid;
     }
 }

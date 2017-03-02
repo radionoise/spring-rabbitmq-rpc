@@ -22,7 +22,7 @@ public class ClientMain {
 
             for (int i = 0; i < 10; i++) {
                 String payload = proxy.doJob(clientId);
-                log.info("Received payload: {}", payload);
+                log.info("Client {} received payload: {}", clientId, payload);
                 Thread.sleep(2000);
             }
         }
