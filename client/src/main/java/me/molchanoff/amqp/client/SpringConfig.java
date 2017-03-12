@@ -20,8 +20,8 @@ public class SpringConfig {
     }
 
     @Bean
-    public RabbitTemplate template(ConnectionFactory connectionFactory) {
-        RabbitTemplate template = new RabbitTemplate(connectionFactory);
+    public RabbitTemplate template() {
+        RabbitTemplate template = new RabbitTemplate(connectionFactory());
         template.setExchange("rpc");
 
         return template;
