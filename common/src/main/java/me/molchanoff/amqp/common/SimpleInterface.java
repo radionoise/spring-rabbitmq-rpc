@@ -6,7 +6,7 @@ package me.molchanoff.amqp.common;
 public interface SimpleInterface {
 
     /**
-     * Returns string with node ID who processed method invokation
+     * Returns UUID generated on server side
      * @param clientId client ID
      */
     String doJob(int clientId);
