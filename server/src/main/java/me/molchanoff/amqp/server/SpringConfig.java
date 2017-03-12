@@ -34,7 +34,7 @@ public class SpringConfig {
 
     @Bean
     public Queue queue() {
-        return new Queue(SimpleInterface.class.getCanonicalName());
+        return new Queue(SimpleInterface.class.getSimpleName());
     }
 
     @Bean
