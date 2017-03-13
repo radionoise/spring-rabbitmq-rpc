@@ -2,7 +2,7 @@
 
 ### Overview
 This a demo project showing how to implement simple distributed Spring application with
-remote procedure call over AMQP (RabbitMQ).
+remote procedure call over AMQP (RabbitMQ). Full tutorial is available [here](http://molchanoff.me/software-development/spring-remoting-amqp)
 
 This app consists of three modules:
 * common - common classes for modules;
